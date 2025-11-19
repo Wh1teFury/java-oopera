@@ -2,14 +2,15 @@ package ru.practicum.theater.show;
 
 import ru.practicum.theater.person.Director;
 import ru.practicum.theater.person.Actor;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class Show {
-    private final String title;
-    private final Integer duration;
-    private final Director director;
-    private final ArrayList<Actor> listOfActors;
+    protected String title;
+    protected Integer duration;
+    protected Director director;
+    protected ArrayList<Actor> listOfActors;
 
     public Show(String title, Integer duration, Director director, ArrayList<Actor> listOfActors) {
         this.title = title;
@@ -21,12 +22,15 @@ public class Show {
     protected String getTitle() {
         return title;
     }
+
     protected Integer getDuration() {
         return duration;
     }
+
     protected Director getDirector() {
         return director;
     }
+
     protected ArrayList<Actor> getListOfActors() {
         return listOfActors;
     }
@@ -77,7 +81,7 @@ public class Show {
     }
 
     public String toString() {
-        return "ru.practicum.theater.show.Show{"
+        return "Show{"
                 + "title='" + title + "', "
                 + "duration='" + duration + "', "
                 + "director='" + director.toString() + "', "

@@ -2,8 +2,8 @@ package ru.practicum.theater.person;
 
 import java.util.Objects;
 
-public final class Actor extends Person {
-    private final Integer height;
+public class Actor extends Person {
+    private Integer height;
 
     public Actor(String name, String surname, Gender gender, Integer height) {
         super(name, surname, gender);
@@ -12,7 +12,7 @@ public final class Actor extends Person {
 
     @Override
     public String toString() {
-        return "ru.practicum.theater.person.Actor{"
+        return "Actor{"
                 + "name='" + getName() + "', "
                 + "surname='" + getSurname() + "', "
                 + "gender='" + getGender() + "', "

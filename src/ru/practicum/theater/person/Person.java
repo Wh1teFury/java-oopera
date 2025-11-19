@@ -3,9 +3,9 @@ package ru.practicum.theater.person;
 import java.util.Objects;
 
 public class Person {
-    private final String name;
-    private final String surname;
-    private final Gender gender;
+    protected String name;
+    protected String surname;
+    protected Gender gender;
 
     public Person(String name, String surname, Gender gender) {
         this.name = name;
@@ -16,16 +16,18 @@ public class Person {
     public String getName() {
         return name;
     }
+
     public String getSurname() {
         return surname;
     }
+
     public Gender getGender() {
         return gender;
     }
 
     @Override
     public String toString() {
-        return "ru.practicum.theater.person.Person{"
+        return "Person{"
                 + "name='" + name + "', "
                 + "surname='" + surname + "', "
                 + "gender='" + gender

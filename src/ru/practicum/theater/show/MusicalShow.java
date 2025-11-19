@@ -3,12 +3,13 @@ package ru.practicum.theater.show;
 import ru.practicum.theater.person.Director;
 import ru.practicum.theater.person.Person;
 import ru.practicum.theater.person.Actor;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class MusicalShow extends Show {
-    private final Person musicAuthor;
-    private final String librettoText;
+    protected Person musicAuthor;
+    protected String librettoText;
 
     public MusicalShow(String title,
                        Integer duration,
@@ -34,7 +35,7 @@ public class MusicalShow extends Show {
     }
 
     public String toString() {
-        String result = "ru.practicum.theater.show.MusicalShow{"
+        String result = "MusicalShow{"
                 + "title='" + getTitle() + "', "
                 + "duration='" + getDuration() + "', "
                 + "director='" + getDirector() + "', "

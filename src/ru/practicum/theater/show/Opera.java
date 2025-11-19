@@ -7,8 +7,8 @@ import ru.practicum.theater.person.Person;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public final class Opera extends MusicalShow {
-    private final Integer choirSize;
+public class Opera extends MusicalShow {
+    private Integer choirSize;
 
     public Opera(String title,
                  Integer duration,
@@ -23,7 +23,7 @@ public final class Opera extends MusicalShow {
 
     @Override
     public String toString() {
-        String result = "ru.practicum.theater.show.MusicalShow{"
+        String result = "Opera{"
                 + "title='" + getTitle() + "', "
                 + "duration='" + getDuration() + "', "
                 + "director='" + getDirector() + "', "

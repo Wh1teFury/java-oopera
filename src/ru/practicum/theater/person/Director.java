@@ -2,8 +2,8 @@ package ru.practicum.theater.person;
 
 import java.util.Objects;
 
-public final class Director extends Person {
-    private final Integer numberOfShows;
+public class Director extends Person {
+    private Integer numberOfShows;
 
     public Director(String name, String surname, Gender gender, Integer numberOfShows) {
         super(name, surname, gender);
@@ -12,7 +12,7 @@ public final class Director extends Person {
 
     @Override
     public String toString() {
-        return "ru.practicum.theater.person.Actor{"
+        return "Director{"
                 + "name='" + getName() + "', "
                 + "surname='" + getSurname() + "', "
                 + "gender='" + getGender() + "', "
